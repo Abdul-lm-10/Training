@@ -1,0 +1,25 @@
+<h1>Guess the Number<h1>
+    <input id="gnumber">
+    <button onclick="Check()">Check</button>
+    <p id ="results">Correct/Wrong Answer</p>
+    
+    <script>
+        var gnumber=document.getElementById("gnumber")
+        var rnumber=Math.floor(Math.random()*10)+1
+        var results=document.getElementById("results")
+        console.log(rnumber)
+        function Check(){     
+
+        var enumber = gnumber.value
+        if (rnumber==enumber )
+
+        {
+            console.log("Right")
+            results.textContent="Correct Answer"
+        }
+        else{
+            console.log("Wrong")
+            results.textContent="Wrong Answer"
+        }
+        }
+    </script>
